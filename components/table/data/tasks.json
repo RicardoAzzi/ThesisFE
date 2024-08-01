@@ -1,0 +1,163 @@
+[
+  {
+    "id": "GRP-001",
+    "location": "Ricardo Alkazzi, Graham Hanna, May Lim, Clem Wong, Erica Leonar",
+    "status": "3",
+    "label": "",
+    "priority": "64%"
+  },
+  {
+    "id": "GRP-002",
+    "location": "Noah Patel, Ava Williams, Ethan Nguyen, Sophia Garcia",
+    "status": "5",
+    "label": "",
+    "priority": "64%"
+  },
+  {
+    "id": "GRP-003",
+    "location": "Mason Lee, Isabella Martinez, William Johnson",
+    "status": "4",
+    "label": "",
+    "priority": "91%"
+  },
+  {
+    "id": "GRP-004",
+    "location": "James Smith, Charlotte Brown, Benjamin Taylor, Amelia Davis",
+    "status": "5",
+    "label": "",
+    "priority": "64%"
+  },
+  {
+    "id": "GRP-005",
+    "location": "Elijah Anderson, Mia Wilson, Oliver Moore",
+    "status": "2",
+    "label": "",
+    "priority": "64%"
+  },
+  {
+    "id": "GRP-006",
+    "location": "Lucas Thomas, Harper Jackson, Alexander White, Evelyn Harris",
+    "status": "4",
+    "label": "",
+    "priority": "91%"
+  },
+  {
+    "id": "GRP-007",
+    "location": "Daniel Martin, Abigail Thompson, Matthew Anderson, Emily Clark, Henry Roberts",
+    "status": "5",
+    "label": "",
+    "priority": "91%"
+  },
+  {
+    "id": "GRP-008",
+    "location": "Jackson Lewis, Ella Walker, Sebastian Hall",
+    "status": "2",
+    "label": "",
+    "priority": "64%"
+  },
+  {
+    "id": "GRP-009",
+    "location": "Aiden Wright, Scarlett King, Michael Scott, Madison Green",
+    "status": "3",
+    "label": "",
+    "priority": "36%"
+  },
+  {
+    "id": "GRP-010",
+    "location": "David Baker, Chloe Adams, Joseph Nelson",
+    "status": "5",
+    "label": "",
+    "priority": "91%"
+  },
+  {
+    "id": "GRP-011",
+    "location": "Carter Hill, Grace Campbell, Jayden Mitchell, Lily Roberts",
+    "status": "4",
+    "label": "",
+    "priority": "64%"
+  },
+  {
+    "id": "GRP-012",
+    "location": "Ryan Phillips, Zoe Carter, Dylan Cooper",
+    "status": "3",
+    "label": "",
+    "priority": "64%"
+  },
+  {
+    "id": "GRP-013",
+    "location": "Luke Morgan, Layla Reed, Owen Murphy",
+    "status": "4",
+    "label": "",
+    "priority": "64%"
+  },
+  {
+    "id": "GRP-014",
+    "location": "Gabriel Rivera, Hannah Bailey, Isaac Foster, Zoe Evans",
+    "status": "5",
+    "label": "",
+    "priority": "91%"
+  },
+  {
+    "id": "GRP-015",
+    "location": "Jack Barnes, Nora Powell, Leo Henderson",
+    "status": "3",
+    "label": "",
+    "priority": "36%"
+  },
+  {
+    "id": "GRP-016",
+    "location": "Connor Ross, Audrey Long, Caleb Hughes",
+    "status": "5",
+    "label": "",
+    "priority": "36%"
+  },
+  {
+    "id": "GRP-017",
+    "location": "Julian Price, Maya Washington, Christopher Gray, Savannah Cox",
+    "status": "3",
+    "label": "",
+    "priority": "91%"
+  },
+  {
+    "id": "GRP-018",
+    "location": "Ezra Ward, Skylar Bennett, Levi Peterson",
+    "status": "5",
+    "label": "",
+    "priority": "91%"
+  },
+  {
+    "id": "GRP-019",
+    "location": "Josiah Wood, Bella Simmons, Mateo Perry, Paisley Bryant",
+    "status": "3",
+    "label": "",
+    "priority": "91%"
+  },
+  {
+    "id": "GRP-020",
+    "location": "Asher Russell, Valentina Coleman, Landon Patterson",
+    "status": "4",
+    "label": "",
+    "priority": "64%"
+  },
+  {
+    "id": "GRP-021",
+    "location": "Grayson Hayes, Aria Butler, Maxwell Jenkins, Aubrey Flores",
+    "status": "3",
+    "label": "",
+    "priority": "91%"
+  },
+  {
+    "id": "GRP-022",
+    "location": "Sawyer Barnes, Aurora Simmons, Finn Washington",
+    "status": "2",
+    "label": "",
+    "priority": "36%"
+  },
+  {
+    "id": "GRP-023",
+    "location": "Silas Foster, Hazel Powell, Ezekiel Hughes, Willow Henderson",
+    "status": "4",
+    "label": "",
+    "priority": "36%"
+  }
+]
