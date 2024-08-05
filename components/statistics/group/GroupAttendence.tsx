@@ -10,11 +10,12 @@ import {
 } from "@/components/ui/card";
 
 const chartData = [
-  { member: "Ricardo Alkazzi", attendance: 90 },
-  { member: "Graham Hanna", attendance: 80 },
-  { member: "May Lim", attendance: 85 },
-  { member: "Clem Wong", attendance: 40 },
-  { member: "Erica Leonar", attendance: 10 },
+  { member: "Ricardo Alkazzi", attendance: 100 },
+  { member: "Graham Hanna", attendance: 100 },
+  { member: "May Lim", attendance: 100 },
+  { member: "Clem Wong", attendance: 100 },
+  { member: "Erica Leonar", attendance: 100 },
+  { member: "Bob Smith", attendance: 100 },
 ];
 
 export function GroupAttendanceChart({ className }: { className?: string }) {

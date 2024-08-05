@@ -11,17 +11,7 @@ import {
 } from "@/components/ui/card";
 
 const data = [
-  { group: "Group 1", timeSpent: 2.5, qualityScore: 85 },
-  { group: "Group 2", timeSpent: 3.2, qualityScore: 92 },
-  { group: "Group 3", timeSpent: 2.1, qualityScore: 78 },
-  { group: "Group 4", timeSpent: 3.6, qualityScore: 88 },
-  { group: "Group 5", timeSpent: 2.8, qualityScore: 82 },
-  { group: "Group 6", timeSpent: 2.2, qualityScore: 75 },
-  { group: "Group 7", timeSpent: 3.2, qualityScore: 90 },
-  { group: "Group 8", timeSpent: 1.8, qualityScore: 70 },
-  { group: "Group 9", timeSpent: 4.1, qualityScore: 95 },
-  { group: "Group 10", timeSpent: 1.5, qualityScore: 65 },
-  { group: "Group 11", timeSpent: 6.7, qualityScore: 98 },
+  { group: "Group 1", timeSpent: 0.6, qualityScore: 85 },
 ];
 
 const colors = [

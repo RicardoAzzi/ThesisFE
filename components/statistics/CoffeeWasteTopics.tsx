@@ -16,25 +16,39 @@ interface ChartDataItem {
   fill: string
 }
 
-const chartData: ChartDataItem[] = [
-  { topic: "Biofuel Production", projects: 6, fill: "hsl(152, 80%, 40%)" },
-  { topic: "Organic Fertilizer", projects: 17, fill: "hsl(33, 80%, 40%)" },
-  { topic: "Cosmetic Ingredients", projects: 5, fill: "hsl(351, 80%, 40%)" },
-  { topic: "Food Additives", projects: 1, fill: "hsl(206, 80%, 40%)" },
-  { topic: "Textile Production", projects: 11, fill: "hsl(271, 80%, 40%)" },
-  { topic: "Other Applications", projects: 1, fill: "hsl(0, 0%, 60%)" },
-]
-
 interface CoffeeWasteTopicsChartProps {
   className?: string
+  topics: ChartDataItem[]
+  title?: string
+  description?: string
 }
 
-export function CoffeeWasteTopicsChart({ className }: CoffeeWasteTopicsChartProps) {
+const defaultColors = [
+  "hsl(152, 80%, 40%)",
+  "hsl(33, 80%, 40%)",
+  "hsl(351, 80%, 40%)",
+  "hsl(206, 80%, 40%)",
+  "hsl(271, 80%, 40%)",
+  "hsl(0, 0%, 60%)",
+]
+
+export function CoffeeWasteTopicsChart({ 
+  className, 
+  topics,
+  title = "Coffee Waste Monetization Topics",
+  description = "Current Research Focus Areas"
+}: CoffeeWasteTopicsChartProps) {
+  // Assign default colors if not provided
+  const chartData = topics.map((topic, index) => ({
+    ...topic,
+    fill: topic.fill || defaultColors[index % defaultColors.length]
+  }))
+
   return (
     <Card className={className}>
       <CardHeader className="text-center">
-        <CardTitle>Coffee Waste Monetization Topics</CardTitle>
-        <CardDescription>Current Research Focus Areas</CardDescription>
+        <CardTitle>{title}</CardTitle>
+        <CardDescription>{description}</CardDescription>
       </CardHeader>
       <CardContent className="flex-1 pb-0">
         <div className="h-[300px] w-full">

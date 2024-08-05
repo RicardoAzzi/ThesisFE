@@ -1,4 +1,5 @@
-import React from 'react';
+"use client"
+import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { BellIcon, CheckIcon, ChevronRightIcon } from "@radix-ui/react-icons";
 import { cn } from "@/lib/utils";
@@ -16,9 +17,31 @@ const students = [
   { zID: 'z5492381', fullName: 'May Lim', degree: 'Mechanical Engineering' },
   { zID: 'z5374219', fullName: 'Clem Wong', degree: 'Civil Engineering' },
   { zID: 'z5237288', fullName: 'Erica Leonar', degree: 'Electical Engineering' },
+  { zID: 'z5222391', fullName: 'Bob Smith', degree: 'Electical Engineering' },
 ];
 
 const GroupDashboard = () => {
+  const [dashboardData, setDashboardData] = useState(null);
+  useEffect(() => {
+    const fetchDashboardData = async () => {
+      try {
+        const response = await fetch('http://localhost:5000/dashboard-data');
+        if (!response.ok) {
+          throw new Error('Failed to fetch dashboard data');
+        }
+        const data = await response.json();
+        console.log(data);
+        setDashboardData(data);
+      } catch (error) {
+        console.error('Error fetching dashboard data:', error);
+      }
+    };
+
+    fetchDashboardData();
+  }, []);
+  if (!dashboardData) {
+    return <p>Loading...</p>;
+  }
   return (
     <div className="p-8 pt-6">
       <div className="flex items-center justify-between space-y-2">
@@ -60,7 +83,7 @@ const GroupDashboard = () => {
 
       <div className="grid gap-4 grid-rows-[0.5fr_0.5fr_0.5fr_0.5fr_0.5fr] grid-cols-4 mt-4">
         <GroupAttendanceChart className="col-span-1 row-span-1" />
-        <GroupParticipationChart className="col-span-2 row-span-1" />
+        <GroupParticipationChart className="col-span-2 row-span-1" weeksToDisplay={dashboardData.average_project_phase || 0} />
 
         <MemberSpeakingTimeChart className="col-span-1 row-span-1" />
         {/* <SentimentAnalysisChart className="col-span-1 row-span-1" /> */}
